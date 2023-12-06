@@ -2,7 +2,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-print("# FIND GRAVITY WITH PENDULUM APPARATUS #")
+print("# FIND GRAVITY WITH SIMPLE PENDULUM #")
 
 T = []
 L = []
@@ -11,7 +11,7 @@ L = []
 pTime = 0
 print("##Enter values of L")
 while pTime<6:
-    getL = float(input("Enter the values of L : "))
+    getL = float(input("Enter the values of L(cm) : "))
     calculateL = getL/100
     L.append(calculateL)
     pTime+=1
@@ -19,7 +19,7 @@ while pTime<6:
 pTime=0
 print("##Enter the values of T")
 while pTime<6:
-    getT = float(input("Enter the values of T : "))
+    getT = float(input("Enter the values of T(s) : "))
     realT = getT/25
     calculateT = pow(realT, 2)
     T.append(calculateT)
@@ -27,8 +27,8 @@ while pTime<6:
 
 print("-------------------------------------------------")
 
-print("Messaurments of Length =",L)
-print("Messurements of Time =",T)
+print("Measurements of Length(m) =",L)
+print("Measurements of Time(s^2) =",T)
 
 print("-------------------------------------------------")
 
